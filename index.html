@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <title>Encriptador de texto</title>
 </head>
 <body>
-    
+
+    <!--encabezado-->
+    <header>
+        <a href="#" rel="">
+        <img src="./img/logo.svg" alt="Logo Alura" class="logo">
+        </a>
+    </header>
+
+    <!--principal-->
+    <main>
+        <section class="Encriptador">
+            <textarea class="encriptar" placeholder="Ingrese el texto aqui"></textarea>
+                <div class="encriptador-aviso">
+                    <img src="./img/aviso.svg" alt="Imagen-Aviso" class="img-aviso">
+                    <p class="texto-aviso">Solo letras minusculas y sin acentos</p>
+                </div>
+                <div class="encriptador-contenedor">
+                    <button type="submit" class="Btn-Encriptar">Encriptar</button>
+                    <button type="submit" class="Btn-DesEncriptar">Desencriptar</button>
+                </div>
+        <section class="tarjeta"></section>
+                <div class="Tarjeta-contenedor">
+                    <img src="./img/muñeco.svg" alt="Imagen muñeco" class="img-muñeco">
+                    <p class="texto-uno">Ningun Mensaje Fue Encontrado</p>
+                    <p class="texto-dos">ingrese el texto que deseas encriptar o desencriptar</p>  
+                </div>
+                <textarea type="mensaje" class="evaluar" readonly></textarea>
+                <button type="submit" class="btn-copiar">Copiar</button>
+        
+    </section>        
+    </main>
+    <!--pie de pagina-->
+    <footer>
+        <p class="copyrigth">&copy;copyrigth 2024-Encriptador de texto - Desarrollado por GroneGTP </p>
+        <a href="#" rel="">
+            <img src="./img/linkedin.svg" alt="Logo-linkedin" class="linked">
+        <a href="#" rel="">
+            <img src="./img/github.svg" alt="Logo-GitHub" class="Git">   
+        </a>
+    </footer>
 </body>
 </html>
