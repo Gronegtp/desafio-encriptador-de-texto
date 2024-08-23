@@ -16,6 +16,7 @@ Global css
     --white-blue: #D8DFE8;
     --Medium-blue: #0a38718a;
     --Gray: #343a40;
+    --gree: #495057;
 }
 
 *{
@@ -158,7 +159,7 @@ main{
     cursor: pointer;
     box-shadow: 0px 20px 29px -5px var(--rgba);
 }
-
+.btn-copiar:active,
 .Btn-DesEncriptar:active{
     box-shadow: inset 2px 2px 4px var(--dark-blue),
     inset -3px -4px 8px var(--font);
@@ -205,4 +206,161 @@ main{
     text-align: center;
     color: var(--medium-gray);
     background: var(--font);
+}
+
+.evaluar{
+    width: 100%;
+    height: 485px;
+    position: absolute;
+    padding: 20px;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--gree);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    border: none;
+    resize: none;
+}
+
+.evaluar:focus{
+    outline: none;
+}
+
+.btn-copiar{
+    width: 224px;
+    height: 67px;
+    margin: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    padding: 24px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: var(--white-blue);
+    border: 1px solid var(--dark-blue);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Btn-Encriptar:hover,
+.Btn-DesEncriptar:hover,
+.btn-copiar:hover{
+    transform: scale(0.97);
+}
+
+/*-----------
+pie de pagina
+-----------*/
+footer{
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 2px solid var(--Font);
+    color: var(--Gray);
+    text-align: center;
+    height: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--Gray);
+}
+
+.linked:hover{
+    color: var(--font);
+    opacity: 0.8;
+}
+
+.Git:hover{
+    color: var(--font);
+    opacity: 0.6;
+
+}
+
+/*-------------
+media
+-------------*/
+@media(max-width: 1250px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .encriptador{
+        margin: 168px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .encriptador-contenedor{
+        display: flex;
+        align-items: center;
+        position: inherit;
+    }
+
+    .encriptador-aviso{
+        position: inherit;
+        margin: 15px;
+    }
+    .tarjeta{
+        width: 665px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .Tarjeta-contenedor{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        bottom: 20%;
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .img-muñeco{
+        display: none;
+    }
+
+    .btn-copiar{
+        position: inherit;
+        width: 100%;
+    }
+
+    .evaluar{
+        width: 100%;
+        height: 210px;
+        padding: 10px;
+    }
+}
+
+@media(max-width: 720px){
+    header .logo{
+        width: 100%;
+        background: var(--White);
+        padding: 2px;
+    }
+
+    .encriptar{
+        width:  90%;
+        font-size: 24px;
+    }
+
+    .encriptador-contenedor{
+        display: grid;
+        gap: 21px;
+    }
+
+    .tarjeta{
+        font-size: 20px;
+    }
 }
