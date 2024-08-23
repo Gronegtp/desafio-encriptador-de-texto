@@ -1,19 +1,26 @@
-/*Fuentes*/
+/*----------
+Fuentes
+------------*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /*---------
-GlobAL css
+Global css
 ---------*/
 :root{
     --font: #e5e5e5;
     --white: #FFFFFF;
     --dark-blue: #0A3871;
     --greey: #c5c5c5;
-
+    --medium-gray: #67808e;
+    --rgba: rgba(0,0,0,0.8);
+    --white-blue: #D8DFE8;
+    --Medium-blue: #0a38718a;
+    --Gray: #343a40;
 }
+
 *{
     margin:0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
     text-decoration: none;
@@ -29,7 +36,7 @@ body{
     height: 100%;
 }
 
-img {
+img{
     max-width: 100%;
 }
 
@@ -49,9 +56,10 @@ header .logo{
     height: 48px;
 }
 
-/*---------
+/*--------
 principal
 ---------*/
+
 main{
     display: flex;
     flex-direction: row;
@@ -60,13 +68,13 @@ main{
     background-position: center;
 }
 
-.Encriptador {
+.encriptador{
     width: 60%;
     margin: 168px 0px 0px 140px;
     background: transparent;
 }
 
-.encriptar {
+.encriptar{
     width: 660px;
     height: 288px;
     font-weight: 400;
@@ -80,4 +88,121 @@ main{
 
 .encriptar::placeholder,:focus{
     color: var(--dark-blue);
+}
+
+.encriptador-aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 8px;
+    position: absolute;
+    top: 500px;
+}
+
+.texto-aviso{
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--medium-gray)
+}
+
+.encriptador-contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    position: absolute;
+    top: 526px;
+}
+
+.Btn-Encriptar{
+    width: 328px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--white);
+    background: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+.Btn-Encriptar:active{
+    box-shadow: inset 2px 2px 4px var(--font),
+    inset -3px -4px 8px var(--dark-blue);
+    color: var(--white-blue);
+}
+
+.Btn-DesEncriptar{
+    width: 328px;
+    height: 67px;
+    padding:24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--dark-blue);
+    background: var(--white-blue);
+    border: 1px solid var(--dark-blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px -5px var(--rgba);
+}
+
+.Btn-DesEncriptar:active{
+    box-shadow: inset 2px 2px 4px var(--dark-blue),
+    inset -3px -4px 8px var(--font);
+    color: var(--Medium-blue);
+}
+
+.tarjeta{
+    width: 270px;
+    height: 580px;
+    background: var(--font);
+    box-shadow: 10px 24px 32px -8px var(--Gray);
+    position: relative;
+    margin-top: 40px;
+    border-radius: 32px;
+    text-align: center;
+}
+
+.Tarjeta-contenedor{
+    width: 250px;
+    margin: auto;
+    margin-top: 50%;
+    background:  var(--font);
+}
+
+.img-muñeco{
+    background: var(--font);
+}
+
+.texto-uno{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    color: var(--Gray);
+    background: var(--font);
+}
+
+.texto-dos{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--medium-gray);
+    background: var(--font);
 }
