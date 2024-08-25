@@ -10,9 +10,9 @@ Realizado por Yesid Londoño 2024
 En el campo donde dice “ingrese el texto aquí” es el sitio donde deberás ingresar el texto que quieres encriptar; luego presionas el botón que dice encriptar y al lado derecho aparecerá tu texto encriptado.
 Para desencriptar el proceso es similar, debes ingresar tu texto encriptado donde dice “ingrese el texto aquí” y luego debes presionar el botón que dice desencriptar.</p>
 
-<p>Si necesitas ayuda me puedes encontrar en mis redes como: https://www.instagram.com/yesidlondon/
-https://www.linkedin.com/in/yesid-osvaldo-londo%C3%B1o-arcila-33995a316/
-https://github.com/Gronegtp </p>
+<ol>Si necesitas ayuda me puedes encontrar en mis redes como:<li> https://www.instagram.com/yesidlondon/ </li>
+<li>https://www.linkedin.com/in/yesid-osvaldo-londo%C3%B1o-arcila-33995a316/ </li>
+<li>https://github.com/Gronegtp </li></ol>
 
 <p>tecnologías utilizadas: HTML, CSS, JavaScript.</p>
 
