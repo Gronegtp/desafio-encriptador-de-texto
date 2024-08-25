@@ -12,7 +12,8 @@ Para desencriptar el proceso es similar, debes ingresar tu texto encriptado dond
 
 <ol>Si necesitas ayuda me puedes encontrar en mis redes como:<li> https://www.instagram.com/yesidlondon/ </li>
 <li>https://www.linkedin.com/in/yesid-osvaldo-londo%C3%B1o-arcila-33995a316/ </li>
-<li>https://github.com/Gronegtp </li></ol>
+<li>https://github.com/Gronegtp </li>
+</ol>
 
 <p>tecnologías utilizadas: HTML, CSS, JavaScript.</p>
 
